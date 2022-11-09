@@ -1,0 +1,39 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { LResult Label
+    MoveScaled(4,27,55,22)
+    Font = Font["+2"]
+    Alignment = Align.Center
+    Border = Border.Plain
+  }
+  { TBNum1 TextBox
+    MoveScaled(35,9,24,4)
+  }
+  { LFactura Label
+    MoveScaled(6,9,26,4)
+    Alignment = Align.Center
+    Text = ("Introduzca el primer número:")
+  }
+  { BCalcular Button
+    MoveScaled(24,53,16,4)
+    Text = ("Ordenar")
+  }
+  { TBNum2 TextBox
+    MoveScaled(35,14,24,4)
+  }
+  { LFactura2 Label
+    MoveScaled(5,14,27,4)
+    Alignment = Align.Center
+    Text = ("Introduzca el segundo número:")
+  }
+  { TBNum3 TextBox
+    MoveScaled(35,19,24,4)
+  }
+  { LFactura3 Label
+    MoveScaled(6,19,26,4)
+    Alignment = Align.Center
+    Text = ("Introduzca el tercer número:")
+  }
+}

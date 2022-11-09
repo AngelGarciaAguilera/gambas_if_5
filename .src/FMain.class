@@ -1,0 +1,55 @@
+' Gambas class file
+
+
+Public Sub BCalcular_Click()
+
+  Dim chico As Integer
+  Dim mediano As Integer
+  Dim grande As Integer
+  
+  Dim pnum As Integer = TBNum1.Text
+  Dim snum As Integer = TBNum2.Text
+  Dim tnum As Integer = TBNum3.Text
+  
+  If (pnum >= snum) Then 
+    
+    If (pnum >= tnum) Then 
+      grande = pnum
+      
+      If (snum >= tnum) Then 
+        mediano = snum
+        chico = tnum
+      Else
+        mediano = tnum
+        chico = snum
+      Endif 
+    
+    Else
+      grande = tnum
+      mediano = pnum
+      chico = snum
+    Endif
+  
+  Else 
+    
+    If (pnum >= tnum) Then 
+      grande = snum
+      mediano = pnum
+      chico = tnum
+    Else 
+      
+      If (snum >= tnum) Then 
+        grande = snum
+        mediano = tnum
+        chico = pnum
+      Else 
+        grande = tnum
+        mediano = snum
+        chico = pnum
+      Endif
+      
+    Endif
+    
+  Endif
+  LResult.Text = grande & " > " & mediano & " > " & chico
+End
